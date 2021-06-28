@@ -16,3 +16,6 @@ ret, mtx, dist, rvecs, tvecs = calibrate_chessboard(
     WIDTH, 
     HEIGHT
 )
+
+print("Camera matrix : \n")
+print(mtx)
