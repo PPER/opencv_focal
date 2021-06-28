@@ -21,7 +21,7 @@ imgpoints = []
 #objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 #prev_img_shape = None
 objp = np.zeros((6*9, 3), np.float32)
-objp[:, :2] = np.mgrid[0:width, 0:height].T.reshape(-1, 2)
+objp[:, :2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 
 objp = objp * square_size
 
